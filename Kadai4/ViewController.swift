@@ -10,9 +10,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet private weak var labal: UILabel!
-    var value = 0
+    private var value = 0
 
-    @IBAction func plusOne(_ sender: Any) {
+    @IBAction private func plusOne(_ sender: Any) {
         value += 1
         labal.text = String(value)
     }
